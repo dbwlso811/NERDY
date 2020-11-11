@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="title" content="NERDY 널디">
+		<meta name="description" content="의류 브랜드 '널디' 리뉴얼 및 반응형 웹사이트 구현 프로젝트 product 페이지입니다.">
+		<meta name="keywords" content="NERDY, 널디, 의류, 스트릿, 브랜드, 패션, 트랙, 스웻">
+		<meta property="og:title" content="NERDY 널디 | product">
+        <meta property="og:description" content="스트릿 브랜드 NERDY 공식스토어. 트랙, 스웻 등 다양한 제품 소개, 매장 소개">
+        <!-- img -->
+		<meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbNcvuY%2FbtqM9OL1kCR%2FfXNJd6UfIppRJigUCNOHj0%2Fimg.jpg">
+        <meta property="og:url" content="https://dbwlso811.github.io/portfolio/index.html">
+        
+		<!-- 트위터 전용 -->
+		<meta name="twitter:card" content="NERDY 널디 | product">
+		<meta name="twitter:title" content="NERDY 널디 | product">
+		<meta name="twitter:description" content="의류 브랜드 '널디' 리뉴얼 및 반응형 웹사이트 구현 프로젝트 product 페이지입니다.">
+		<meta name="twitter:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbNcvuY%2FbtqM9OL1kCR%2FfXNJd6UfIppRJigUCNOHj0%2Fimg.jpg">
+		<meta name="twitter:url" content="https://dbwlso811.github.io/portfolio/index.html">
+        <title>NERDY</title>
+        <!-- css 연결 -->
+        <!-- 폰트 -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Montserrat', sans-serif; -->
+        
+        <!-- 파비콘 -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <!-- <link rel="manifest" href="common/manifest.json"> -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="common/normalize.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/product.css">
+
+        <!-- icon -->
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+        <!-- JS/jQuery 연결 -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+        <!-- dotdotdot -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/4.1.0/dotdotdot.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/product.js"></script>   
+    </head>
+
+    <body>
+        <div id="container">
+            <!----- header ----->
+            <!----- header ----->
+            <header>
+                <div class="header_inner">
+                    <a id="header_logo" href="index.html">
+                        <div id="logo_img">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <h1>
+                            <img src="images/logo_txt.png" alt="logo_txt">
+                        </h1>
+                    </a>
+                    <div class="header_list_box">
+                        <div class="header_toplist">
+                            <div class="top_txt">
+                                <p>COPYRIGHT © 2019 NERDY</p>
+                            </div>                         
+                           <div class="header_toplist_menu">
+                               <div id="header_icon">
+                                    <a href="#"     class="ttx">community</a>
+                                    <a href="#"     class="ttx">login</a>
+                                    <a href="#"     class="ttx">join</a>
+                                    
+                                    <a href="#"     id="ttx_header">
+                                        <i class="fas   fa-bars"></i>
+                                    </a>
+                                    <a href="#"     id="ttx_header">
+                                        <i class="fas   fa-search"></i>
+                                    </a>
+                                    <a href="#" class="header_mypage headers">
+                                        <img src="images/mypage.png"    alt="mypage">
+                                    </a>
+                                    <a href="#" class="header_cart headers">
+                                        <img src="images/cart.png" alt="cart">
+                                    </a>
+                               </div>                                
+                           </div> 
+                        </div>
+                        <!-- heaer 대메뉴 -->
+                        <div id="header_grid">
+                            <ul id="headermenu1" class="headergridbox">
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 1 -->
+                                    <a href="#" class="headersmenu">
+                                        all
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 2 -->
+                                    <a href="#" class="headersmenu">
+                                        black
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 3 -->
+                                    <a href="#" class="headersmenu">
+                                        sale
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 4 -->
+                                    <a href="#" class="headersmenu">
+                                        new
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 5 -->
+                                    <a href="#" class="headersmenu">
+                                        best100
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul id="headermenu2" class="headergridbox">
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 6 -->
+                                    <a href="#" class="headersmenu">
+                                        event
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 7 -->
+                                    <a href="#" class="headersmenu">
+                                        track
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 8 -->
+                                    <a href="#" class="headersmenu">
+                                        set
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 9 -->
+                                    <a href="#" class="headersmenu">
+                                        shoes
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 10 -->
+                                    <a href="#" class="headersmenu">
+                                        outer
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <!----- side_1 ----->
+            <div id="side_left_box">
+                <ul id="side_left">
+                    <li id="side_menu" class="side_box">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <li id="side_Search" class="side_box">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <div class="look">
+                            <span>
+                                <img src="" alt="">
+                            </span>
+                            <form action="" method="" target="" enctype="">
+                                <input id="" name="" value type="hidden">
+                                <div class="">
+                                    <fieldset>
+                                        <legend>검색</legend>
+                                        <input id="keyword" name="" placeholder onmousedown="" value type="text">
+                                        <!-- 버튼 -->
+                                        <input type="image" src="" alt="검색" onclick="">
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square" id="side_sns"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram" id="side_sns"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <!----- list_info ----->
+            <div id="list_info">
+                <!-- swiper -->
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="images/info_img1.jpg" alt="info1">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/info_img2.jpg" alt="info2">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/info_img3.jpg" alt="info3">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/info_img4.jpg" alt="info4">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/info_img5.jpg" alt="info5">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/info_img6.jpg" alt="info6">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/info_img7.jpg" alt="info7">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/info_img8.jpg" alt="info8">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/info_img9.jpg" alt="info9">
+                        </li>
+                    </ul>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="info_box">
+                    <ul class="info">
+                        <li class="box1" id="info_name">
+                            <ul class="info_name_txt infocenter">
+                                <li class="txt1">
+                                    <h1>[[반팔티 증정]] [NEW] 블랙 에디션</h1>
+                                    <h1>스카치 트랙 세트</h1>
+                                </li>
+                                <li class="txt2">
+                                    <h4>Black Edition Track Set</h4>
+                                </li>
+                                <li class="txt3">
+                                    <img src="images/star.jpg" alt="star"><h4>5(9)</h4>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="box2">
+                            <ul class="info_won infocenter">
+                                <li class="txt4">
+                                    <h4>Price</h4>
+                                    <h4 id="txt4_won">188,000WON</h4>
+                                </li>
+                                <li class="txt5">
+                                    <h4>Sale Price</h4>
+                                    <h4 id="txt5_won">169,200WON</h4>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="box3" id="info_buy">
+                            <ul class="info_buy_txt infocenter">
+                                <li id="count">
+                                    <h2>TOTAL PRICE(count) :</h2>
+                                    <h2>0</h2>
+                                </li>
+                                <li id="buy_box">
+                                    <ul class="buy_btn">
+                                        <li class="bttn" id="bttn1">BUY IT NOW</li>
+                                        <li class="bttn" id="bttn2">ADD TO CART</li>
+                                        <li class="bttn" id="bttn3">ADD TO WISH</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- info_list menu -->
+                        <li class="box4" id="info_info">
+                            <ul id="infos" class="infocenter">
+                                <li class="infos_1 infots_txt" id="detail">
+                                    <h3><a href="#">DETAIL INFO</a></h3>
+                                    <div class="detail_txt intxt">
+                                        <h5>널디가 선택한 블랙</h5>
+                                        <h6>칠흑같은 어둠의 세련미와 무게감</h6>
+                                        <p>블랙컬러를 기반으로 더욱 성숙한<br>
+                                            널디 시그니쳐를 보여주는 컨셉 라인입니다.<br>
+                                            무게감과 세련됨을 입은 블랙에디션을 만나보세요.
+                                        </p>
+                                        <h5>올 블랙 트랙&스카치 트랙</h5>
+                                        <p>두 제품은 제훔의 모든 프린트밎선 컬러에 차이가 있습니다<br>
+                                            올블랙 트랙 <span>(Black Edition Track)</span>은 블랙 솔리드로,<br>
+                                            스카치 트랙 <span>(Black Edition Scoth Track)</span>은<br>
+                                            블랙 스카치로 적용되었습니다.
+                                        </p>
+                                        <h5>NERDY'S<br>
+                                            SIGNATURE FABRIC<br>
+                                            널디만의 시그니처 원단
+                                        </h5>
+                                        <h6>흡습속건</h6>
+                                        <p>수분을 빠르게 흡수하고 건조하여<br>
+                                            제품 착용간 쾌적함을 유지합니다.
+                                        </p>
+                                        <h6>강한 내구성</h6>
+                                        <p>내구성이 뛰어나 마찰이나 반복되는<br>
+                                            움직임에도 원단손상이 적습니다.</p>
+                                        <h6>편안한 관리</h6>
+                                        <p>기계세탁이 가능하며 세탁후 빠르게<br>
+                                            건조되어 편한 관리가 가능합니다.
+                                        </p>
+                                        <h6>부드러운 촉감</h6>
+                                        <p>소프트 터치감의 원단으로
+                                            착용시 편안함을 전달합니다.
+                                        </p>
+                                        <h6>선명한 컬러</h6>
+                                        <p>분산 염료를 사용, 저온 가공으로<br>
+                                            원단을 특염 처리해 선명한 컬러를 내고<br>
+                                            물빠짐 및 이염현상을 최소화 했습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="infos_2 infots_txt" id="delivery">
+                                    <h3><a href="#">DELIVERY</a></h3>
+                                    <div class="delivery_txt intxt">
+                                        <ul>
+                                            <li><h5>배송비</h5><span>무료배송</span></li>
+                                            <li><h5>배송예정일</h5><span>평일20시 잉전 결제완료시 당일출고<br>(주말/공휴일을 제외한 영업일 기준)</span></li>
+                                            <li><h5>쇼핑팁</h5><span>카드 무이자 할부 혜택</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="infos_3 infots_txt" id="review">
+                                    <h3><a href="#">REVIEW</a></h3>
+                                    <div class="review_txt intxt">
+                                        <ul id="review_inbox">
+                                            <!-- 리뷰 -->
+                                            <li id="review_box">
+                                                 <ul>
+                                                     <li class="review_img">
+                                                         <!-- 제품후기 사진 -->
+                                                         <img src="images/review_2.jpg" alt="review">
+                                                         <div class="review_star"> 
+                                                             <!-- 별표이미지 -->
+                                                             <img src="images/star.jpg" alt="star">
+                                                             <p>- 아주 좋아요</p>
+                                                         </div>
+                                                     </li>
+                                                     <li id="review_txtt">
+                                                         <p class="multi">
+                                                            방에서 뜯었을땐 생각보다 빛나지 않았던 줄들이 속상했는데....<br>
+                                                            오늘 밖에서 보니까 챠르르 떨어지는 쉬머한 광이 나는....예쁜 친구였구요....<br>
+                                                            백수가 되었기에 다시는 널디에서 신상 사지 않으려고 노력했는데 어쩔 수 없었습니다.<br>
+                                                            역시 널디는 세트지.<br>
+                                                            널디 번창하세요...<br>
+                                                            <br>
+                                                            참고로 상의는 160/M 딱 엉덩이까지 덮습니다
+                                                         </p>
+                                                     </li>
+                                                 </ul>
+                                            </li>
+                                            <!-- 리뷰 -->
+                                            <li id="review_box">
+                                                 <ul>
+                                                     <li class="review_img">
+                                                         <!-- 제품후기 사진 -->
+                                                         <img src="images/review_2.jpg" alt="review">
+                                                         <div class="review_star"> 
+                                                             <!-- 별표이미지 -->
+                                                             <img src="images/star.jpg" alt="star">
+                                                             <p>- 아주 좋아요</p>
+                                                         </div>
+                                                     </li>
+                                                     <li id="review_txtt">
+                                                         <p class="multi">
+                                                            방에서 뜯었을땐 생각보다 빛나지 않았던 줄들이 속상했는데....<br>
+                                                            오늘 밖에서 보니까 챠르르 떨어지는 쉬머한 광이 나는....예쁜 친구였구요....<br>
+                                                            백수가 되었기에 다시는 널디에서 신상 사지 않으려고 노력했는데 어쩔 수 없었습니다.<br>
+                                                            역시 널디는 세트지.<br>
+                                                            널디 번창하세요...<br>
+                                                            <br>
+                                                            참고로 상의는 160/M 딱 엉덩이까지 덮습니다
+                                                         </p>
+                                                     </li>
+                                                 </ul>
+                                            </li>
+                                            <!-- 리뷰 -->
+                                            <li id="review_box">
+                                                 <ul>
+                                                     <li class="review_img">
+                                                         <!-- 제품후기 사진 -->
+                                                         <img src="images/review_2.jpg" alt="review">
+                                                         <div class="review_star"> 
+                                                             <!-- 별표이미지 -->
+                                                             <img src="images/star.jpg" alt="star">
+                                                             <p>- 아주 좋아요</p>
+                                                         </div>
+                                                     </li>
+                                                     <li id="review_txtt">
+                                                         <p class="multi">
+                                                            방에서 뜯었을땐 생각보다 빛나지 않았던 줄들이 속상했는데....<br>
+                                                            오늘 밖에서 보니까 챠르르 떨어지는 쉬머한 광이 나는....예쁜 친구였구요....<br>
+                                                            백수가 되었기에 다시는 널디에서 신상 사지 않으려고 노력했는데 어쩔 수 없었습니다.<br>
+                                                            역시 널디는 세트지.<br>
+                                                            널디 번창하세요...<br>
+                                                            <br>
+                                                            참고로 상의는 160/M 딱 엉덩이까지 덮습니다
+                                                         </p>
+                                                     </li>
+                                                 </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="infos_4 infots_txt" id="qna">
+                                    <h3><a href="#">Q&A</a></h3>
+                                    <div class="qna_txt intxt">
+                                        <table>
+                                            <tr id="tt_qna" class="tr">
+                                                <td>번호</td>
+                                                <td>카테고리</td>
+                                                <td>제목</td>
+                                                <td>작성자</td>
+                                                <td>작성일</td>
+                                                <td>조회</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td>1</td>
+                                                <td></td>
+                                                <td id="te_qna">
+                                                    <!-- 열쇠고리 아이콘 -->
+                                                    <img src="" alt="">
+                                                    <p>상품문의</p>
+                                                </td>
+                                                <td>김**</td>
+                                                <td>2020.09.29</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td>1</td>
+                                                <td></td>
+                                                <td id="re_qna">
+                                                    <!-- 열쇠고리 잠금 아이콘 -->
+                                                    <img src="" alt="">
+                                                    <div>RE</div>
+                                                    <p>답변</p>
+                                                </td>
+                                                <td></td>
+                                                <td>2020.09.29</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td>1</td>
+                                                <td></td>
+                                                <td id="te_qna">
+                                                    <!-- 열쇠고리 아이콘 -->
+                                                    <img src="" alt="">
+                                                    <p>상품문의</p>
+                                                </td>
+                                                <td>김**</td>
+                                                <td>2020.09.29</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td>1</td>
+                                                <td></td>
+                                                <td id="re_qna">
+                                                    <!-- 열쇠고리 잠금 아이콘 -->
+                                                    <img src="" alt="">
+                                                    <div>RE</div>
+                                                    <p>답변</p>
+                                                </td>
+                                                <td></td>
+                                                <td>2020.09.29</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td>1</td>
+                                                <td></td>
+                                                <td id="te_qna">
+                                                    <!-- 열쇠고리 아이콘 -->
+                                                    <img src="" alt="">
+                                                    <p>상품문의</p>
+                                                </td>
+                                                <td>김**</td>
+                                                <td>2020.09.29</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!----- side_2 ----->
+            <div id="fixed_top">
+                <p class="pageTop">
+                    <a href="#" title="화면최상단으로 이동" id="top">
+                        <img src="images/btn_sctop_b.png" alt="Top">
+                        <img src="images/btn_sctop_b_ani.png" alt="Topgo">
+                    </a>
+                </p>
+            </div>
+
+
+            <!----- footer ----->
+            <footer>
+                <div class="inner">
+                    <ul class="footer_info1">
+                        <li id="footer_logo">
+                            <a href="#">
+                                <img src="images/logo_txt.png" alt="footer_logo">
+                            </a>
+                        </li>
+                        <li id="footer_back">
+                            <a href="#">
+                                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iNTEyLDI4LjMwOCA0ODMuNjkyLDAgMjU2LDIyNy42OTIgMjguMzA4LDAgMCwyOC4zMDggMjI3LjY5MiwyNTYgMCw0ODMuNjkyIDI4LjMwOCw1MTIgMjU2LDI4NC4zMDggNDgzLjY5Miw1MTIgDQoJCQk1MTIsNDgzLjY5MiAyODQuMzA4LDI1NiAJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                            </a>
+                        </li>
+                        <li id="cs">
+                            <div id="cstxt">
+                                <p>APR FASHION<br>
+                                CS CT : 1544-2083<br>
+                                (MON-FRI 09:00-18:00)</p>
+                            </div>
+                        </li>
+                        <li id="address">
+                            <p id="addresstxt">
+                                (05551) 94-12, 36th floor,<br>
+                                300, Olympic-ro, Songpa-gu,<br>
+                                Seoul, Republic of Korea |<br>
+                                CEO : Minkyung Lee<br>
+                                COPYRIGHT © 2019 NERDY<br>
+                                hosted by cafe24
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="footer_info2">                        
+                        <li id="footer_menu">
+                            <ul id="ftmenu">
+                                <li class="ftm">
+                                    <a href="#">menu1</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu2</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu3</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu4</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu5</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu6</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu7</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu8</a>
+                                </li>   
+                            </ul>
+                        </li>
+                        <li id="footer_info">
+                            <div id="offline_store">
+                                <h5>offline store</h5>
+                                <p>
+                                    <span>NERDY FLAGSHIP STORE Seoul</span><br>
+                                    94-12, Eoulmadang-ro, Mapo-gu, Seoul<br>
+                                    T. +82 02-2135-5471<br>
+                                </p>
+                                <p>
+                                    <span>NERDY FLAGSHIP STORE Busan</span><br>
+                                    3, Gwangbok-ro 39beon-gil, Jung-gu, Busan, Republic of Korea<br>
+                                    T. +82 70-7731-9100
+                                </p>
+                                <p>
+                                    <span>NERDY FLAGSHIP STORE Gwangju</span><br>
+                                    22, Seoseok-ro, Dong-gu, Gwangju, Republic of Korea<br>
+                                    T. +82 70-4324-2851
+                                </p>
+                                <p>
+                                    <span>NERDY FLAGSHIP STORE Daegu</span><br>
+                                    15, Dongseong-ro, Jung-gu, Daegu, Republic of Korea<br>
+                                    T. 070-4270-2001
+                                </p>
+                            </div>
+                        </li>
+                        <li id="copyright">
+                            <ul id="footer_sns">
+                                <li class="snsbox" id="copyright">
+                                    <p>COPYRIGHT © 2019 NERDY</p>
+                                </li>
+                                <li class="snsbox" id="sns1">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li class="snsbox" id="sns2">
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

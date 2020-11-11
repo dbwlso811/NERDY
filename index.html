@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="title" content="NERDY 널디">
+		<meta name="description" content="의류 브랜드 '널디' 리뉴얼 및 반응형 웹사이트 구현 프로젝트 페이지입니다.">
+		<meta name="keywords" content="NERDY, 널디, 의류, 스트릿, 브랜드, 패션, 트랙, 스웻">
+		<meta property="og:title" content="NERDY 널디">
+        <meta property="og:description" content="스트릿 브랜드 NERDY 공식스토어. 트랙, 스웻 등 다양한 제품 소개, 매장 소개">
+        <!-- img -->
+		<meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbNcvuY%2FbtqM9OL1kCR%2FfXNJd6UfIppRJigUCNOHj0%2Fimg.jpg">
+        <meta property="og:url" content="https://dbwlso811.github.io/portfolio/index.html">
+        
+		<!-- 트위터 전용 -->
+		<meta name="twitter:card" content="NERDY 널디">
+		<meta name="twitter:title" content="NERDY 널디">
+		<meta name="twitter:description" content="의류 브랜드 '널디' 리뉴얼 및 반응형 웹사이트 구현 프로젝트 페이지입니다.">
+		<meta name="twitter:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbNcvuY%2FbtqM9OL1kCR%2FfXNJd6UfIppRJigUCNOHj0%2Fimg.jpg">
+		<meta name="twitter:url" content="https://dbwlso811.github.io/portfolio/index.html">
+        <title>NERDY</title>
+        <!-- css 연결 -->
+        <!-- 폰트 -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Montserrat', sans-serif; -->
+        
+        <!-- 파비콘 -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <!-- <link rel="manifest" href="common/manifest.json"> -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="common/normalize.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- icon -->
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+        <!-- JS/jQuery 연결 -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+        <!-- dotdotdot -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/4.1.0/dotdotdot.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <div id="container">
+            <!----- menu ----->
+            <div class="menupg">
+                <div class="none menu_close">
+                    <a href="#">
+                        <i>x</i>
+                    </a>
+                </div>
+                <!-- 대메뉴 box -->
+                <h1 class="menu_logo">
+                    <a href="#">
+                        <img src="images/logo-nerdy-newwhwh.png" alt="menu_logo">
+                    </a>
+                </h1>
+                <ul class="menupg_list">
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box1">
+                        <a href="#">menu1</a>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box2">
+                        <a href="#">menu2</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box3">
+                        <a href="#">menu3</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box4">
+                        <a href="#">menu4</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box5">
+                        <a href="#">menu5</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box6">
+                        <a href="#">menu6</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box7">
+                        <a href="#">menu7</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box8">
+                        <a href="#">menu8</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box9">
+                        <a href="#">menu9</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    <!-- 대메뉴 -->
+                    <li class="list_box" id="box10">
+                        <a href="#">menu10</a>
+                        <!-- 소메뉴 -->
+                        <ul class="list_txt">
+                            <li><a href="#">txt1</a></li>
+                            <li><a href="#">txt2</a></li>
+                            <li><a href="#">txt3</a></li>
+                            <li><a href="#">txt4</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!----- header ----->
+            <header>
+                <div class="header_inner">
+                    <a id="header_logo" href="index.html">
+                        <div id="logo_img">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <h1>
+                            <img src="images/logo_txt.png" alt="logo_txt">
+                        </h1>
+                    </a>
+                    <div class="header_list_box">
+                        <div class="header_toplist">
+                            <div class="top_txt">
+                                <p>COPYRIGHT © 2019 NERDY</p>
+                            </div>                         
+                           <div class="header_toplist_menu">
+                               <div id="header_icon">
+                                    <a href="#" class="ttx">community</a>
+                                    <a href="#" class="ttx">login</a>
+                                    <a href="#" class="ttx">join</a>
+                                    
+                                    <a href="#" class="menu_open" id="ttx_header">
+                                        <i class="fas   fa-bars"></i>
+                                    </a>
+                                    <a href="#"     id="ttx_header">
+                                        <i class="fas   fa-search"></i>
+                                    </a>
+                                    <a href="#" class="header_mypage headers">
+                                        <img src="images/mypage.png"    alt="mypage">
+                                    </a>
+                                    <a href="#" class="header_cart headers">
+                                        <img src="images/cart.png" alt="cart">
+                                    </a>
+                               </div>                                
+                           </div> 
+                        </div>
+                        <!-- heaer 대메뉴 -->
+                        <div id="header_grid">
+                            <ul id="headermenu1" class="headergridbox">
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 1 -->
+                                    <a href="#" class="headersmenu">
+                                        all
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 2 -->
+                                    <a href="#" class="headersmenu">
+                                        black
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 3 -->
+                                    <a href="#" class="headersmenu">
+                                        sale
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 4 -->
+                                    <a href="#" class="headersmenu">
+                                        new
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 5 -->
+                                    <a href="#" class="headersmenu">
+                                        best100
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul id="headermenu2" class="headergridbox">
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 6 -->
+                                    <a href="#" class="headersmenu">
+                                        event
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 7 -->
+                                    <a href="#" class="headersmenu">
+                                        track
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 8 -->
+                                    <a href="#" class="headersmenu">
+                                        set
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 9 -->
+                                    <a href="#" class="headersmenu">
+                                        shoes
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="headermenu" id="menu_box"><!-- 대메뉴 10 -->
+                                    <a href="#" class="headersmenu">
+                                        outer
+                                        <i id="headermenu_ico"></i>
+                                    </a>
+                                    <ul class="mn_1"><!-- 소메뉴 -->
+                                        <li><!-- 소메뉴1 -->
+                                            <a href="#">mn1<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴2 -->
+                                            <a href="#">mn2<i id="mn_ico"></i></a>
+                                        </li>
+                                        <li><!-- 소메뉴3 -->
+                                            <a href="#">mn3<i id="mn_ico"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <!----- side_1 ----->
+            <div id="side_left_box">
+                <ul id="side_left">
+                    <li id="side_menu" class="side_box menu_open">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <li id="side_Search" class="side_box">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <div class="look">
+                            <span>
+                                <img src="" alt="">
+                            </span>
+                            <form action="" method="" target="" enctype="">
+                                <input id="" name="" value type="hidden">
+                                <div class="">
+                                    <fieldset>
+                                        <legend>검색</legend>
+                                        <input id="keyword" name="" placeholder onmousedown="" value type="text">
+                                        <!-- 버튼 -->
+                                        <input type="image" src="" alt="검색" onclick="">
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square" id="side_sns"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram" id="side_sns"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <!----- wrap ----->
+            <div id="wrap">
+                <div class="contents">
+                    <div class="swiper-container">
+                        <!-- swiper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="main1">
+                            </div>
+                            <div class="swiper-slide" id="main2">
+                            </div>
+                            <div class="swiper-slide" id="main3">
+                            </div>
+                            <div class="swiper-slide" id="main4">
+                            </div>
+                            <div class="swiper-slide" id="main5">
+                            </div>                            
+                        </div>
+                            <!-- swiper_ooo 만드어얗ㅁ -->
+                        <div class="swiper-pagination">
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <!-----*** contens 제품 리스ㅌ  ***----->
+                    <div class="contents_box best_item" id="contents_list1">
+                        <!-- best item title -->
+                        <div class="contents_box_title" id="best_item_title">
+                            <!-- titlebox -->
+                            <div id="titlebox">
+                                <a href="#">
+                                    <h5>best item</h5>
+                                    <img src="images/ico_right.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- best item list box -->
+                        <ul class="best_item_list" id="contents_grid">
+                            <!-- best item list box > box1 -->
+                            <li class="best_list" id="best_list_box1">
+                                <!-- img -->
+                                <div class="list_img c3c3c3"  id="bestlist_img1">
+                                    <a href="list_info.html">
+                                        <img src="images/best1.jpg" alt="best_list_img1">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt" id="bestlist_txt1">
+                                    <p>[new] 블랙 에디션  스카치 트랙 세트<br>
+                                    <span>100,000원</span><br>
+                                    169,200원
+                                    </p>
+                                    <!-- <p>[new] 블랙 에디션  스카치 트랙 세트</p>
+                                    <p><span>100,000원</span></p>
+                                    <p>169,200원</p> -->
+                                </div>
+                            </li>
+                            <!-- best item list box > box2 -->
+                            <li class="best_list" id="best_list_box2">
+                                <!-- img -->
+                                <div class="list_img"  id="bestlist_img2">
+                                    <a href="list_info.html">
+                                        <img src="images/best2.jpg" alt="best_list_img2">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="bestlist_txt2">
+                                    <p>젤리그 화이트</p>
+                                    <p>109,000원</p>
+                                </div>
+                            </li>
+                            <!-- best item list box > box3 -->
+                            <li class="best_list" id="best_list_box3">
+                                <!-- img -->
+                                <div class="list_img"  id="bestlist_img3">
+                                    <a href="list_info.html">
+                                        <img src="images/best3.jpg" alt="best_list_img3">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="bestlist_txt3">
+                                    <p>젤리그 블랙</p>
+                                    <p>109,000원</p>
+                                </div>
+                            </li>
+                            <!-- best item list box > box4 -->
+                            <li class="best_list" id="best_list_box4">
+                                <!-- img -->
+                                <div class="list_img"  id="bestlist_img4">
+                                    <a href="list_info.html">
+                                        <img src="images/best4.jpg" alt="best_list_img4">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="bestlist_txt4">
+                                    <p>[20FW] 벨티드 스트링 백팩 블랙</p>
+                                    <p>99,000원</p>
+                                </div>
+                            </li>
+                            <!-- best item list box > box5 -->
+                            <li class="best_list" id="best_list_box5">
+                                <!-- img -->
+                                <div class="list_img"  id="bestlist_img5">
+                                    <a href="list_info.html">
+                                        <img src="images/best5.png" alt="best_list_img5">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt" id="bestlist_txt5">
+                                    <p>스핀 로고 풀오버 후디 블랙<br>
+                                    <span>99,000원</span><br>
+                                    69,300원</p>
+                                </div>
+                            </li>
+                            <!-- best item list box > box6 -->
+                            <li class="best_list" id="best_list_box6">
+                                <!-- img -->
+                                <div class="list_img"  id="bestlist_img6">
+                                    <a href="list_info.html">
+                                        <img src="images/best6.jpg" alt="best_list_img6">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="bestlist_txt6">
+                                    <p>그라데이션 트랙 세트 카키<br>
+                                    <span>105,000원</span><br>
+                                    129,500원</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="contents_more" class="morebox">
+                            <a href="list_info.html">
+                                more items(1/40)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contents_box new_item" id="contents_list2">
+                        <!-- new item title -->
+                        <div class="contents_box_title" id="new_item_title">
+                            <!-- titlebox -->
+                            <div id="titlebox">
+                                <a href="list_info.html">
+                                    <h5>new item</h5>
+                                    <img src="images/ico_right.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- new item list box -->
+                        <ul class="new_item_list" id="contents_grid">
+                            <!-- new item list box > box1 -->
+                            <li class="new_list" id="new_list_box1">
+                                <!-- img -->
+                                <div class="list_img"  id="newlist_img1">
+                                    <a href="list_info.html">
+                                        <img src="images/new1.jpg" alt="new_list_img1">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt" id="newlist_txt1">
+                                    <p>로고 패턴 플리스 자켓 퍼블</p>
+                                    <p>179,000원</p>
+                                </div>
+                            </li>
+                            <!-- new item list box > box2 -->
+                            <li class="new_list" id="new_list_box2">
+                                <!-- img -->
+                                <div class="list_img"  id="newlist_img2">
+                                    <a href="list_info.html">
+                                        <img src="images/new2.jpg" alt="new_list_img2">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="newlist_txt2">
+                                    <p>로고 패턴 플리스 자켓 블랙</p>
+                                    <p>179,000원</p>
+                                </div>
+                            </li>
+                            <!-- new item list box > box3 -->
+                            <li class="new_list" id="new_list_box3">
+                                <!-- img -->
+                                <div class="list_img"  id="newlist_img3">
+                                    <a href="list_info.html">
+                                        <img src="images/new3.jpg" alt="new_list_img3">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="newlist_txt3">
+                                    <p>플리스 스탠드 넥 자켓 아이보리</p>
+                                    <p>139,000원</p>
+                                </div>
+                            </li>
+                            <!-- new item list box > box4 -->
+                            <li class="new_list" id="new_list_box4">
+                                <!-- img -->
+                                <div class="list_img"  id="newlist_img4">
+                                    <a href="list_info.html">
+                                        <img src="images/new4.jpg" alt="new_list_img4">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="newlist_txt4">
+                                    <p>플리스 스탠드 넥 자켓 베이지</p>
+                                    <p>139,000원</p>
+                                </div>
+                            </li>
+                            <!-- new item list box > box5 -->
+                            <li class="new_list" id="new_list_box5">
+                                <!-- img -->
+                                <div class="list_img"  id="newlist_img5">
+                                    <a href="list_info.html">
+                                        <img src="images/new5.jpg" alt="new_list_img5">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt" id="newlist_txt5">
+                                    <p>셰르파 베스트 블랙</p>
+                                    <p>129,000원</p>
+                                </div>
+                            </li>
+                            <!-- new item list box > box6 -->
+                            <li class="new_list" id="new_list_box6">
+                                <!-- img -->
+                                <div class="list_img"  id="newlist_img6">
+                                    <a href="list_info.html">
+                                        <img src="images/new6.jpg" alt="new_list_img6">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="newlist_txt6">
+                                    <p>셰르파 베스트 크림</p>
+                                    <p>129,000원</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="contents_more" class="morebox">
+                            <a href="#">
+                                more items(1/40)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contents_box black_ed" id="contents_list3">
+                        <!-- black item title -->
+                        <div class="contents_box_title" id="black_item_title">
+                            <!-- titlebox -->
+                            <div id="titlebox">
+                                <a href="#">
+                                    <h5>black edition</h5>
+                                    <img src="images/ico_right.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- black item list box -->
+                        <ul class="black_item_list" id="contents_grid">
+                            <!-- black item list box > box1 -->
+                            <li class="black_list" id="black_list_box1">
+                                <!-- img -->
+                                <div class="list_img"  id="blacklist_img1">
+                                    <a href="list_info.html">
+                                        <img src="images/black1.jpg" alt="black_list_img1">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt" id="blacklist_txt1">
+                                    <p>[new] 블랙 에디션 올블랙 트랙 세트<br>
+                                    <span>177,000원</span><br>
+                                    159,300원</p>
+                                </div>
+                            </li>
+                            <!-- black item list box > box2 -->
+                            <li class="black_list" id="black_list_box2">
+                                <!-- img -->
+                                <div class="list_img c3c3c3"  id="blacklist_img2">
+                                    <a href="list_info.html">
+                                        <img src="images/best1.jpg" alt="black_list_img2">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="blacklist_txt2">
+                                    <p>[new] 블랙 에디션  스카치 트랙 세트<br>
+                                    <span>100,000원</span><br>
+                                    169,200원</p>
+                                </div>
+                            </li>
+                            <!-- black item list box > box3 -->
+                            <li class="black_list" id="black_list_box3">
+                                <!-- img -->
+                                <div class="list_img c3c3c3"  id="blacklist_img3">
+                                    <a href="list_info.html">
+                                        <img src="images/black3.jpg" alt="black_list_img3">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="blacklist_txt3">
+                                    <p>[블랙 에디션] 스카치 트랙 탑</p>
+                                    <p>99,000원</p>
+                                </div>
+                            </li>
+                            <!-- black item list box > box4 -->
+                            <li class="black_list" id="black_list_box4">
+                                <!-- img -->
+                                <div class="list_img c3c3c3"  id="blacklist_img4">
+                                    <a href="list_info.html">
+                                        <img src="images/black4.jpg" alt="black_list_img4">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="blacklist_txt4">
+                                    <p>[블랙 에디션] 스카치 트랙 팬츠</p>
+                                    <p>89,000원</p>
+                                </div>
+                            </li>
+                            <!-- black item list box > box5 -->
+                            <li class="black_list" id="black_list_box5">
+                                <!-- img -->
+                                <div class="list_img"  id="blacklist_img5">
+                                    <a href="list_info.html">
+                                        <img src="images/black5.jpg" alt="black_list_img5">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt" id="blacklist_txt5">
+                                    <p>[블랙 에디션] 트랙 탑</p>
+                                    <p>92,000원</p>
+                                </div>
+                            </li>
+                            <!-- black item list box > box6 -->
+                            <li class="black_list" id="black_list_box6">
+                                <!-- img -->
+                                <div class="list_img" id="blacklist_img6">
+                                    <a href="list_info.html">
+                                        <img src="images/black6.jpg" alt="black_list_img6">
+                                    </a>
+                                </div>
+                                <!-- txt -->
+                                <div class="list_txt"  id="blacklist_txt6">
+                                    <p>[블랙 에디션] 트랙 팬츠</p>
+                                    <p>85,000원</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="contents_more" class="morebox">
+                            <a href="#">
+                                more items(1/40)
+                            </a>
+                        </div>
+                    </div>
+
+                </div>               
+            </div>
+
+
+            <!----- side_2 ----->
+            <div id="fixed_top">
+                <p class="pageTop">
+                    <a href="#" title="화면최상단으로 이동" id="top">
+                        <img src="images/btn_sctop_b.png" alt="Top">
+                        <img src="images/btn_sctop_b_ani.png" alt="Topgo">
+                    </a>
+                </p>
+            </div>
+
+
+            <!----- footer ----->
+            <footer>
+                <div class="inner">
+                    <ul class="footer_info1">
+                        <li id="footer_logo">
+                            <a href="#">
+                                <img src="images/logo_txt.png" alt="footer_logo">
+                            </a>
+                        </li>
+                        <li id="footer_back">
+                            <a href="#">
+                                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iNTEyLDI4LjMwOCA0ODMuNjkyLDAgMjU2LDIyNy42OTIgMjguMzA4LDAgMCwyOC4zMDggMjI3LjY5MiwyNTYgMCw0ODMuNjkyIDI4LjMwOCw1MTIgMjU2LDI4NC4zMDggNDgzLjY5Miw1MTIgDQoJCQk1MTIsNDgzLjY5MiAyODQuMzA4LDI1NiAJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                            </a>
+                        </li>
+                        <li id="cs">
+                            <div id="cstxt">
+                                <p>APR FASHION<br>
+                                CS CT : 1544-2083<br>
+                                (MON-FRI 09:00-18:00)</p>
+                            </div>
+                        </li>
+                        <li id="address">
+                            <p id="addresstxt">
+                                (05551) 94-12, 36th floor,<br>
+                                300, Olympic-ro, Songpa-gu,<br>
+                                Seoul, Republic of Korea |<br>
+                                CEO : Minkyung Lee<br>
+                                COPYRIGHT © 2019 NERDY<br>
+                                hosted by cafe24
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="footer_info2">                        
+                        <li id="footer_menu">
+                            <ul id="ftmenu">
+                                <li class="ftm">
+                                    <a href="#">menu1</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu2</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu3</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu4</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu5</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu6</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu7</a>
+                                </li>
+                                <li class="ftm">
+                                    <a href="#">menu8</a>
+                                </li>   
+                            </ul>
+                        </li>
+                        <li id="footer_info">
+                            <div id="offline_store">
+                                <h5>offline store</h5>
+                                <p>
+                                    <span>NERDY FLAGSHIP STORE Seoul</span><br>
+                                    94-12, Eoulmadang-ro, Mapo-gu, Seoul<br>
+                                    T. +82 02-2135-5471<br>
+                                </p>
+                                <p>
+                                    <span>NERDY FLAGSHIP STORE Busan</span><br>
+                                    3, Gwangbok-ro 39beon-gil, Jung-gu, Busan, Republic of Korea<br>
+                                    T. +82 70-7731-9100
+                                </p>
+                                <p>
+                                    <span>NERDY FLAGSHIP STORE Gwangju</span><br>
+                                    22, Seoseok-ro, Dong-gu, Gwangju, Republic of Korea<br>
+                                    T. +82 70-4324-2851
+                                </p>
+                                <p>
+                                    <span>NERDY FLAGSHIP STORE Daegu</span><br>
+                                    15, Dongseong-ro, Jung-gu, Daegu, Republic of Korea<br>
+                                    T. 070-4270-2001
+                                </p>
+                            </div>
+                        </li>
+                        <li id="copyright">
+                            <ul id="footer_sns">
+                                <li class="snsbox" id="copyright">
+                                    <p>COPYRIGHT © 2019 NERDY</p>
+                                </li>
+                                <li class="snsbox" id="sns1">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li class="snsbox" id="sns2">
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
