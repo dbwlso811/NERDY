@@ -61,7 +61,7 @@ a {text-decoration: none; color: #000;}
 
      /*** header ***/
      header { 
-        width: 100vw; height: 106px;display: flex;position: fixed; top: 0;z-index: 999999;background-color: #fff;}
+        width: 100vw; height: 106px;display: flex;position: fixed; top: 0;z-index: 999;background-color: #fff;}
         /** header > header_inner **/
         .header_inner {width: 100%; height: 100%;border-bottom: 3px solid #000;display: flex;}
         /* logo */
@@ -89,12 +89,29 @@ a {text-decoration: none; color: #000;}
             /* list box > header_grid > ul(headergridbox) */
             .headergridbox {width:100%;display: grid;grid-template-columns: repeat(5, 20%);height: 100%;}
             .headermenu {display: flex;flex-direction: column;height: 100%;align-items: center;justify-content: center;}
-            .headermenu a {display: flex;width: 100%;text-align: center; justify-content: center; text-transform: uppercase;height: 100%;background-color: #fff;border: 1px solid #000;align-items: center;}    
-            .headermenu:hover a {color: #9201FF;}#headermenu2 {display: none;}
+            .headermenu a {display: flex;width: 100%;text-align: center; justify-content: center; text-transform: uppercase;height: 100%;
+                background-color: #fff;border: 1px solid #000;
+                align-items: center;}    
+            .headermenu:hover .headersmenu {color: #9201FF;}#headermenu2 {display: none;}
                 /* list box > header_grid > ul(headergridbox) > li(headermenu) */
                 #menu_box5 {border-right: none;}
                 /* list box > ul(header_grid) > li > ul(소메뉴) */
-                .mn_1 {display: none;}.mn_1 li {width: 100%;}.mn_1 li:hover a {background-color: #be69ff; color: #fff;}
+                .mn_1 {
+                    display: none;
+                    position: absolute;
+                    top: 97%;
+                    width: 17%;
+                    height: 100%;
+                    /* border: none; */
+                    /* z-index: 9999; */
+                }
+                .mn_1 li {width: 100%;height: 33.3333%;transition: 0.2s;}
+                .mn_1 > li a {border: none;
+                color: #000;
+                }
+                .mn_1 li:hover a {background-color: #be69ff; color: #fff;}
+                
+                
 
 /*******************   side_left   *******************/
 
@@ -168,7 +185,7 @@ a {text-decoration: none; color: #000;}
         .snsbox {border: 1px solid #000;width: 8.5%;}.snsbox a {width: 100%; height: 100%;display: flex;justify-content: center;align-items: center;}.snsbox .fab {width: 20px; height: 20px;display: block;}#copyright p {margin: 8px 10px;}
    
 /****************** pc *********************/
-@media (min-width:1440px) {
+@media (min-width:1280px) {
     #container {display: flex;
         justify-content: center;
         align-items: center; flex-direction: column;}
@@ -187,6 +204,9 @@ a {text-decoration: none; color: #000;}
             /* header_icon */#header_icon {width: 50%; height: 100%;}.header_toplist_menu a {display: flex;font-size: 12px; width: 100%; height: 100%;justify-content: center;align-items: center;text-transform: uppercase;}.header_toplist_menu a:nth-child(3) {width: 70%;}
             #header_icon #ttx_header { display: none;}#header_icon .headers {width: 60%;}#header_icon { display: flex;}#header_icon a {display: flex;}#header_icon a img {width: 20px; height: 20px;margin: 0;}
             /* list box > header_grid */#header_grid {flex-wrap: wrap; width:100%;}#headermenu1, #headermenu2 {display: flex;}.headermenu {width: 100%;}#menu_box5 {border-right: none;}
+
+            /* header menu */
+            #headermenu1 .mn_1 {top: 64%;}
 
 /*******************   side_left   *******************/
         /*** side_left  sns ***/#side_left_box {width: 10.81%;display: flex;position: fixed;top: 0; left: 0;align-items: center;}#side_left {

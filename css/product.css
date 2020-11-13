@@ -8,15 +8,61 @@ h1, h2, h3, h4, h5, p {margin: 0;}
 
 a {text-decoration: none; color: rgb(0, 0, 0);}
 
-/**** 모바일 ****/
+/************** 모바일 **************/
 
 
     /*** container ***/
     #container {width: 100%;}
+    /*** menu ***/
+    .menupg {
+        width: 100vw; height: 100vh;
+        /* display: flex; */
+        background-color: rgba(0, 0, 0, 0.8); overflow: hidden;
+        z-index: 999999999; position: fixed; right: 0;
+        /* right: -100vw;  */top: -1000vw;
+        /* display: none; */
+    }
+    
+    .none {position: relative;}
+    .none i {background-color: #9201FF; width: 30px; height: 30px;display: flex; position: absolute; top: 10px; right: 10px;}
+    .menu_logo {text-align: center; padding-top: 95px;margin: 0 auto;}
+    .menu_logo img {width: 50%;}
+    /* menu page dddmenu */
+    .menupg_list {
+        text-align: center;
+        margin-top: 65px;
+    }
+    .list_box {
+        margin-top: 19.5px;
+    }
+    .menupg_list > .list_box > a.on {color:#9201FF;}
+
+    .list_box a {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        font-size: 15px;
+        line-height: 2em;
+        text-transform: uppercase;
+    }
+    .list_box a:hover {
+        color: #9201FF;
+        border-bottom: 2px solid #9201FF;
+    }
+
+
+        /* 소메뉴 */
+
+        .list_txt {
+            /* display: none; */
+        }
+        .list_txt a {
+            border: none;
+            font-weight: normal;
+        }
 
      /*** header ***/
      header { 
-        width: 100%; height: 106px;display: flex;position: fixed; top: 0;z-index: 9999999;background-color: #fff;}
+        width: 100vw; height: 106px;display: flex;position: fixed; top: 0;z-index: 999;background-color: #fff;}
         /** header > header_inner **/
         .header_inner {width: 100%; height: 100%;border-bottom: 3px solid #000;display: flex;}
         /* logo */
@@ -44,12 +90,29 @@ a {text-decoration: none; color: rgb(0, 0, 0);}
             /* list box > header_grid > ul(headergridbox) */
             .headergridbox {width:100%;display: grid;grid-template-columns: repeat(5, 20%);height: 100%;}
             .headermenu {display: flex;flex-direction: column;height: 100%;align-items: center;justify-content: center;}
-            .headermenu a {display: flex;width: 100%;text-align: center; justify-content: center; text-transform: uppercase;height: 100%;background-color: #fff;border: 1px solid #000;align-items: center;}    
-            .headermenu:hover a {color: #9201FF;}#headermenu2 {display: none;}
+            .headermenu a {display: flex;width: 100%;text-align: center; justify-content: center; text-transform: uppercase;height: 100%;
+                background-color: #fff;border: 1px solid #000;
+                align-items: center;}    
+            .headermenu:hover .headersmenu {color: #9201FF;}#headermenu2 {display: none;}
                 /* list box > header_grid > ul(headergridbox) > li(headermenu) */
                 #menu_box5 {border-right: none;}
                 /* list box > ul(header_grid) > li > ul(소메뉴) */
-                .mn_1 {display: none;}.mn_1 li {width: 100%;}.mn_1 li:hover a {background-color: #be69ff; color: #fff;}
+                .mn_1 {
+                    display: none;
+                    position: absolute;
+                    top: 97%;
+                    width: 17%;
+                    height: 100%;
+                    /* border: none; */
+                    /* z-index: 9999; */
+                }
+                .mn_1 li {width: 100%;height: 33.3333%;transition: 0.2s;}
+                .mn_1 > li a {border: none;
+                color: #000;
+                }
+                .mn_1 li:hover a {background-color: #be69ff; color: #fff;}
+                
+                
 
 /*******************   side_left   *******************/
 
@@ -129,7 +192,7 @@ footer {margin: 0; padding: 0; height: 517px;width: 100%; background-color: #920
         
 
 /****************** pc *********************/
-@media (min-width:1440px) {
+@media (min-width:1280px) {
     #container {display: flex;
         justify-content: center;
         align-items: center; flex-direction: column;}
@@ -149,8 +212,15 @@ footer {margin: 0; padding: 0; height: 517px;width: 100%; background-color: #920
             #header_icon #ttx_header { display: none;}#header_icon .headers {width: 60%;}#header_icon { display: flex;}#header_icon a {display: flex;}#header_icon a img {width: 20px; height: 20px;margin: 0;}
             /* list box > header_grid */#header_grid {flex-wrap: wrap; width:100%;}#headermenu1, #headermenu2 {display: flex;}.headermenu {width: 100%;}#menu_box5 {border-right: none;}
 
+            /* header menu */
+            #headermenu1 .mn_1 {top: 64%;}
+
 /*******************   side_left   *******************/
-        /*** side_left  sns ***/#side_left_box {width: 10.81%;display: flex;position: fixed;top: 0; left: 0;align-items: center;}#side_left {width: 63px;}#side_left a {width: 25px; height: 25px; display: flex;float: right;}#side_left svg {width: 100%; height: 100%;}
+        /*** side_left  sns ***/#side_left_box {width: 10.81%;display: flex;position: fixed;top: 0; left: 0;align-items: center;}#side_left {
+            /* width: 63px; */
+            margin-left: 2.5%;
+        }
+        #side_left a {width: 25px; height: 25px; display: flex;float: right;}#side_left svg {width: 100%; height: 100%;}
             /* side_menu */.fa-bars {color: #000;}#side__Search a {display: block; width: 30px; height: 30px;}.fa-search {width: 30px; height: 30px;}.look { display: none;}
 
 /*******************   info 제품상세   *******************/
