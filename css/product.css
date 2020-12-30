@@ -24,7 +24,7 @@ a {text-decoration: none; color: rgb(0, 0, 0);}
     }
     
     .none {position: relative;}
-    .none i {background-color: #9201FF; width: 30px; height: 30px;display: flex; position: absolute; top: 10px; right: 10px;}
+    .none i { width: 20px; height: 20px;display: flex; position: absolute; top: 20px; right: 20px; background-image: url(../images/-x.svg); background-position: center; background-size: cover; background-repeat: no-repeat;}
     .menu_logo {text-align: center; padding-top: 95px;margin: 0 auto;}
     .menu_logo img {width: 50%;}
     /* menu page dddmenu */
@@ -116,10 +116,102 @@ a {text-decoration: none; color: rgb(0, 0, 0);}
 
 /*******************   side_left   *******************/
 
-        /*** side_left  sns ***/
-        #side_left_box {width: 10%; height: 100%;display: none;}#side_left {width: 28px; height: 136px;display: flex;justify-content: space-between;flex-direction: column;position: fixed;}
-            /* side_menu */
-            .fa-bars {color: #000;}#side__Search a {display: block; width: 20px; height: 20px;}.fa-search {width: 20px; height: 20px;}
+#side_left_box {width: 10%; height: 100%;display: none;}#side_left {width: 28px; height: 136px;display: flex;justify-content: space-between;flex-direction: column;position: fixed;}
+/* side_menu */
+.fa-bars {color: #000;}#side__Search a {display: block; width: 20px; height: 20px;}.fa-search {width: 20px; height: 20px;}
+/* search */
+svg {
+    overflow: visible;
+  }
+  
+  .search {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 32rem;
+    height: 7rem;
+  }
+  .search:not(.active) {
+    cursor: pointer;
+  }
+  
+  .search-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .search-svg__path {
+    fill: none;
+    stroke: #1d1d1d;
+    stroke-width: 6px;
+  }
+  
+  .search-input {
+    position: relative;
+    width: 27rem;
+    height: 6rem;
+    padding: 1.2rem 0 1.2rem 2.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 3.6rem;
+    color: #1d1d1d;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .search-input.visible {
+    z-index: auto;
+    opacity: 1;
+  }
+  
+  .search-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    z-index: -1;
+  }
+  .search-close.visible {
+    z-index: auto;
+  }
+  .search-close.visible:before {
+    transform: rotate(-45deg);
+    opacity: 1;
+    transition: transform 0.2s cubic-bezier(0.73, 0.14, 0.4, 1.58), opacity 0.1s;
+  }
+  .search-close.visible:after {
+    transform: rotate(45deg);
+    opacity: 1;
+    transition: transform 0.2s 0.2s cubic-bezier(0.73, 0.14, 0.4, 1.58), opacity 0.1s 0.2s;
+  }
+  .search-close:before, .search-close:after {
+    content: "";
+    position: absolute;
+    top: 1.2rem;
+    left: 0;
+    width: 100%;
+    height: 0.6rem;
+    background: #1d1d1d;
+    border-radius: 0.5rem;
+    opacity: 0;
+  }
+  .search-close:before {
+    transform: rotate(-45deg) translateX(2rem);
+    transition: transform 0.2s, opacity 0.1s 0.1s;
+  }
+  .search-close:after {
+    transform: rotate(45deg) translateX(2rem);
+    transition: transform 0.2s 0.2s, opacity 0.1s 0.3s;
+  }
+/*  */
 
 /*******************   info 제품상세   *******************/
         #list_info {padding-top: 140px;}
